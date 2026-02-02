@@ -1,3 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 p {
     color: red;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    grid-template-rows: 0.5fr 1fr 3fr 3fr;
+}
+
+.dashbaordIcon{
+    height: 25px;
+    
+}
+
+.dashboardLink {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    
+
+}
+
+.box1{
+    background-color: red;
+    height: 100vh;
+    grid-area: 1 / 1 / 5 / 2;
+    
+    
+    display: grid;
+    grid-template-rows: 150px 300px 100px;
+
+}
+
+.box1>*{
+    margin: 0px 40px 10px 10px;
+    font-size: 2rem;
+}
+
+.box2{
+    background-color: blue;
+    grid-area: 1 / 2 / 2 / 5
+    
+
+}
+
+.box3{
+    background-color: cyan;
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+.box4{
+    background-color: yellow;
+    grid-area: 3 / 2 / 5 / 4;
+}
+
+
+.box6 {
+    background-color: green;
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.box7 {
+    background-color: orange;
+    grid-area: 4 / 4 / 5 / 5;
 }
