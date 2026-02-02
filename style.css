@@ -3,9 +3,7 @@ body{
     padding: 0;
 }
 
-p {
-    color: red;
-}
+
 
 .mainContainer{
     display: grid;
@@ -39,26 +37,46 @@ p {
 
 .box1>*{
     margin: 0px 40px 10px 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .box2{
     background-color: blue;
-    grid-area: 1 / 2 / 2 / 5
+    grid-area: 1 / 2 / 2 / 5;
     
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    place-items: center;
 }
 
 .box3{
     background-color: cyan;
     grid-area: 2 / 2 / 3 / 5;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    place-items: center;
 }
 
 .box4{
     background-color: yellow;
     grid-area: 3 / 2 / 5 / 4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
+.boxsub4 {
+    background-color: grey;
+    
+    
+    margin: 20px;
+}
 
 .box6 {
     background-color: green;
