@@ -14,6 +14,29 @@ body{
     grid-template-rows: 0.5fr 1fr 3fr 3fr;
 }
 
+
+
+.dashboard{
+    background-color: rgb(4, 0, 226);
+    min-height: 100vh;
+    grid-area: 1 / 1 / 5 / 2;
+    
+    
+    display: grid;
+    grid-template-rows: 150px 300px 100px;
+
+    border-right: rgb(180, 180, 180) 5px inset;
+    border-top: grey 5px outset;
+    border-bottom: grey 5px inset;
+    color: white;
+
+}
+
+.dashboard>*{
+    margin: 0px 40px 10px 10px;
+    font-size: 1.5rem;
+}
+
 .dashbaordIcon{
     height: 25px;
     
@@ -23,25 +46,14 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    
-
 }
 
-.box1{
-    background-color: red;
-    min-height: 100vh;
-    grid-area: 1 / 1 / 5 / 2;
-    
-    
-    display: grid;
-    grid-template-rows: 150px 300px 100px;
-
+.dashboardLink > a {
+    color: white;
 }
 
-.box1>*{
-    margin: 0px 40px 10px 10px;
-    font-size: 1.5rem;
-}
+
+
 
 .box2{
     background-color: blue;
