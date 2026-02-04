@@ -1,7 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
+
+
 
 
 
@@ -26,7 +29,7 @@ body{
 
 .box1{
     background-color: red;
-    height: 100vh;
+    min-height: 100vh;
     grid-area: 1 / 1 / 5 / 2;
     
     
@@ -80,18 +83,16 @@ body{
     
 }
 
-.sideIcon{
 
-}
 
-.sideButtons{
-
-}
-
-.box4{
+.yellow{
     background-color: yellow;
     grid-area: 3 / 2 / 5 / 4;
+    overflow: auto;
+}
+   
 
+.box4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -99,19 +100,26 @@ body{
     gap: 10px;
 }
 
+
 .boxsub4 {
-    background-color: grey;
-    
-    
+    background-color: rgb(255, 255, 255);
+    grid-area: 7fr;
     margin: 20px;
+    padding: 20px;
+    font-size: 1.1rem;
 }
 
 .box6 {
     background-color: green;
     grid-area: 3 / 4 / 4 / 5;
+
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
 }
 
 .box7 {
     background-color: orange;
     grid-area: 4 / 4 / 5 / 5;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
 }
