@@ -1,3 +1,4 @@
+/* haiiiiiii :3 */
 body{
     margin: 0;
     padding: 0;
@@ -5,37 +6,36 @@ body{
 }
 
 
-
+/* just a simple body reset */
 
 
 .mainContainer{
     display: grid;
     grid-template-columns: 1fr 3fr 2fr 2fr;
-    grid-template-rows: 0.5fr 0.6fr 3fr 3fr;
+    grid-template-rows: 0.5fr 0.8fr 3fr 3fr;
 }
 
-
+/* main page layot via mainContainer */
 
 .dashboard{
+    grid-area: 1 / 1 / 5 / 2;
+
+    display: grid;
+    grid-template-rows: 150px 250px 100px;
+    
     background-color: rgb(4, 0, 226);
     min-height: 100vh;
-    grid-area: 1 / 1 / 5 / 2;
-    
-    
-    display: grid;
-    grid-template-rows: 150px 300px 100px;
-
     border-right: rgb(180, 180, 180) 5px inset;
     border-top: grey 5px outset;
     border-bottom: grey 5px inset;
     color: white;
-
 }
 
 .dashboard>*{
     margin: 0px 40px 10px 10px;
     font-size: 1.5rem;
 }
+
 
 .dashboardIcon{
     height: 25px;
@@ -52,16 +52,14 @@ body{
     color: white;
 }
 
-.accountIcon{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}
+/* 
+I'm happy with the dashboard stuff so thats all good.
+*/
 
-div.minibar>img{
-    height: 40px;
-    width: 40px;
-}
+
+
+
+
 
 
 .topSearch{
@@ -97,7 +95,14 @@ div.minibar>img{
     margin-right: 50px;
 }
 
-.box3{
+div.minibar>img{
+    height: 50px;
+    width: 50px;
+}
+
+/* its kinda fine? i just need to fix out the spacing and size stuff going on with this and the lower bar. not as bad as under it tho. */
+
+.topAccount{
     background-color: rgb(226, 226, 226);
     grid-area: 2 / 2 / 3 / 5;
     border: grey 5px solid;
@@ -106,7 +111,6 @@ div.minibar>img{
     display: grid;
     grid-template-columns: clamp(200px, 50%, 800px) 2fr;
     align-items: center;
-    justify-items: center;
     overflow: hidden;
     gap: clamp(100px, 11.5vw, 200px);
     font-size: 1.2rem;
@@ -115,12 +119,23 @@ div.minibar>img{
 
 .sideIcon{
     display: grid;
-    
-    grid-template-columns: 0fr 2fr;
+    margin-left: 5vw;
+    grid-template-columns: 0fr 0fr;
     gap: 20px;
     align-items: center;
-    margin-left: 50px;
+    
 }
+
+.accountIcon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+
+
+
 
 .sideButtons{
     display: grid;
@@ -141,12 +156,18 @@ div.minibar>img{
     padding: 5px 10px;
 }
 
-
+/*  */
 
 .yellow{
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     grid-area: 3 / 2 / 5 / 4;
     overflow: auto;
+}
+
+div.yellow > h4 , div.box6 > h4, div.box7 > h4{
+    margin-left: 30px;
+    
+    font-size: 20px;
 }
    
 
@@ -165,7 +186,37 @@ div.minibar>img{
     margin: 20px;
     padding: 20px;
     font-size: 1.1rem;
+
+    border: solid 5px;
+    border-left: solid 15px;
 }
+
+#cardOne{
+    border-color: red;
+}
+
+#cardTwo{
+    border-color: orange;
+}
+
+#cardThree{
+    border-color: yellow;
+}
+
+#cardFour{
+    border-color: green;
+}
+
+#cardFive{
+    border-color: blue;
+}
+
+#cardSix{
+    border-color: purple;
+}
+
+/*  */
+
 
 .box6 {
     background-color: green;
@@ -175,9 +226,27 @@ div.minibar>img{
     grid-template-rows: 0.1fr 1fr;
 }
 
+.annoBox{
+    background-color: grey;
+    display: grid;
+    grid-template-rows: repeat(3, 0.3fr);
+    justify-content: center;
+}
+
+/*  */
+
 .box7 {
     background-color: orange;
     grid-area: 4 / 4 / 5 / 5;
     display: grid;
     grid-template-rows: 0.1fr 1fr;
 }
+
+/*  */
+
+.yellow, .box6, .box7 {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+/* and this is just for bottom of page spacing*/
