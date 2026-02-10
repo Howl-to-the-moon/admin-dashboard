@@ -71,12 +71,10 @@ I'm happy with the dashboard stuff so thats all good.
     display: grid;
     grid-template-columns: clamp(200px, 50%, 800px) 5fr;
     align-items: center;
-    justify-items: center;
-    overflow: hidden;
-    gap: clamp(100px, 10vw, 200px);
+    
+    gap: clamp(1rem, 20vw, 15rem);
     font-size: 1.2rem;
     text-align: center;
-    
 }
 
 .search{
@@ -86,13 +84,16 @@ I'm happy with the dashboard stuff so thats all good.
     margin-left: 50px;
 }
 
+
+
 .minibar{
     display: grid;
     align-items: center;
     
     grid-template-columns: 0fr 0fr 0fr;
+
     gap: 30px;
-    margin-right: 50px;
+    overflow: hidden;
 }
 
 div.minibar>img{
@@ -100,7 +101,9 @@ div.minibar>img{
     width: 50px;
 }
 
-/* its kinda fine? i just need to fix out the spacing and size stuff going on with this and the lower bar. not as bad as under it tho. */
+/* betterish. still need to figure out the best practices */
+
+/* honestly i just need to mkae this one big grid box and fix all this shit tmmrw. everything else feels pretty much fine */
 
 .topAccount{
     background-color: rgb(226, 226, 226);
@@ -109,12 +112,13 @@ div.minibar>img{
     border-top: none;
 
     display: grid;
-    grid-template-columns: clamp(200px, 50%, 800px) 2fr;
+    grid-template-columns: clamp(200px, 50%, 800px) 3fr;
     align-items: center;
     overflow: hidden;
-    gap: clamp(100px, 11.5vw, 200px);
-    font-size: 1.2rem;
-    text-align: center;    
+    gap: clamp(1rem, 20vw, 12rem);
+
+    box-shadow: 0px 5px black;
+        
 }
 
 .sideIcon{
@@ -127,8 +131,8 @@ div.minibar>img{
 }
 
 .accountIcon{
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 }
 
@@ -143,7 +147,7 @@ div.minibar>img{
     align-items: center;
     
     grid-template-columns: 0fr 0fr 0fr;
-    gap: 15px;
+    gap: 30px;
     margin-right: 50px;
 }
 
@@ -154,6 +158,8 @@ div.minibar>img{
     border: 3px solid black;
     border-radius: 20px;
     padding: 5px 10px;
+    width: 200px;
+    height: 50px;
 }
 
 /*  */
@@ -162,6 +168,7 @@ div.minibar>img{
     background-color: rgb(255, 255, 255);
     grid-area: 3 / 2 / 5 / 4;
     overflow: auto;
+    margin-right: 30px;
 }
 
 div.yellow > h4 , div.box6 > h4, div.box7 > h4{
@@ -189,6 +196,8 @@ div.yellow > h4 , div.box6 > h4, div.box7 > h4{
 
     border: solid 5px;
     border-left: solid 15px;
+
+    box-shadow: 10px 5px black;
 }
 
 #cardOne{
@@ -219,18 +228,39 @@ div.yellow > h4 , div.box6 > h4, div.box7 > h4{
 
 
 .box6 {
-    background-color: green;
     grid-area: 3 / 4 / 4 / 5;
 
     display: grid;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr;
+
+    margin-right: 10px;
+}
+
+div.box6 > h4 {
+    margin-left: 0px;
 }
 
 .annoBox{
-    background-color: grey;
+    background-color: rgb(221, 221, 221);
     display: grid;
-    grid-template-rows: repeat(3, 0.3fr);
+    grid-template-rows: repeat(3, 0.0fr);
+    align-items: center;
     justify-content: center;
+    padding: 0px 20px;
+
+    text-align: left;
+    box-shadow: 5px 5px black;
+}
+
+div.annoBox > div > h6 {
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.line{
+    height: 1px;
+    width: 90%;
+    border-top: 2px solid grey;
 }
 
 /*  */
@@ -240,6 +270,13 @@ div.yellow > h4 , div.box6 > h4, div.box7 > h4{
     grid-area: 4 / 4 / 5 / 5;
     display: grid;
     grid-template-rows: 0.1fr 1fr;
+
+    margin-right: 10px;
+
+}
+
+.trendBox {
+    color: red;
 }
 
 /*  */
