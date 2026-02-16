@@ -9,5 +9,7 @@ until it worked.
 Credits: 
 
 // Oswald & Merriweather fonts from Google
+
 // All link icons belonging to pictogrammers.com
+
 // Placeholder and Website design by Howl
