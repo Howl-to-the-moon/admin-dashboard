@@ -19,7 +19,7 @@
     font-display: swap;
 }
 
-
+/* comment out the fonts for a classic macrosoft look! */
 
 body{
     margin: 0;
@@ -27,7 +27,7 @@ body{
     overflow-x: hidden;
 }
 
-h4, h6, div.dubby > p{
+h4, h6, div.trendBoxUser > p{
     margin: 0;
 }
 
@@ -102,14 +102,9 @@ I'm happy with the dashboard stuff so thats all good.
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     
-    
-    
     justify-content: center;
-
     overflow: hidden;
 }
-
-
 
 .search{
     grid-area: 1 / 1 / 2 / 4;
@@ -120,7 +115,7 @@ I'm happy with the dashboard stuff so thats all good.
     gap: 20px;
 }
 
-/* could just edit the css for the searchbar itself */
+/* could just edit the css for the searchbar itself // 2/16: eh */
 
 .minibar{
     grid-area: 1 / 4 / 2 / 6;
@@ -147,7 +142,7 @@ I'm happy with the dashboard stuff so thats all good.
     gap: 50px;
 }
 
-.bubby{
+.sideIconGreet{
     display: grid;
     align-items: center;
     justify-content: center;
@@ -155,12 +150,12 @@ I'm happy with the dashboard stuff so thats all good.
     padding: 0;
 }
 
-.bubby>h4{
+.sideIconGreet>h4{
     font-size: 2rem;
     grid-row: 2;
 }
 
-.bubby>h6{
+.sideIconGreet>h6{
     font-size: 1rem;
 }
 
@@ -173,8 +168,6 @@ I'm happy with the dashboard stuff so thats all good.
     gap: 20px;
 }
 
-
-
 .sideButtons > button {
     background-image: linear-gradient(to right, blue, cyan);
     color: white;
@@ -185,23 +178,22 @@ I'm happy with the dashboard stuff so thats all good.
     
 }
 
-/*  all ts shit fixed */
+/*  all is fixed */
 
-.yellow{
+.projectMain{
     background-color: rgb(255, 255, 255);
     grid-area: 3 / 2 / 5 / 4;
     overflow: auto;
     margin-right: 30px;
 }
 
-div.yellow > h4 , div.box6 > h4, div.box7 > h4{
+div.projectMain > h4 , div.annoMain > h4, div.trendMain > h4{
     margin-left: 30px;
     
     font-size: 20px;
 }
    
-
-.box4{
+.projectInner{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -210,8 +202,7 @@ div.yellow > h4 , div.box6 > h4, div.box7 > h4{
     
 }
 
-
-.boxsub4 {
+.projectInnerBox {
     background-color: rgb(255, 255, 255);
     
     grid-area: 7fr;
@@ -259,7 +250,7 @@ div.yellow > h4 , div.box6 > h4, div.box7 > h4{
 /*  */
 
 
-.box6 {
+.annoMain {
     grid-area: 3 / 4 / 4 / 5;
 
     display: grid;
@@ -269,7 +260,7 @@ div.yellow > h4 , div.box6 > h4, div.box7 > h4{
     margin-bottom: 10px;
 }
 
-div.box6 > h4 , div.box7 > h4{
+div.annoMain > h4 , div.trendMain > h4{
     margin-left: 0px;
     margin-bottom: 20px;
 }
@@ -291,8 +282,6 @@ div.annoBox > div > h6 {
     margin-bottom: -10px;
 }
 
-
-
 .line{
     height: 1px;
     width: 90%;
@@ -302,7 +291,7 @@ div.annoBox > div > h6 {
 
 /*  */
 
-.box7 {
+.trendMain {
     grid-area: 4 / 4 / 5 / 5;
     display: grid;
     grid-template-rows: 0fr 0fr;
@@ -333,7 +322,7 @@ div.annoBox > div > h6 {
     border-radius: 50%;
 }
 
-.dubby{
+.trendBoxUser{
     width: 150px;
     margin: 10px 10px;
     display: grid;
@@ -347,7 +336,8 @@ div.annoBox > div > h6 {
 
 /*  */
 
-.yellow, .box6{
+.projectMain, .annoMain{
     margin-top: 20px;
 }
 
+/* just extra margin stuff */
